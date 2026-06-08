@@ -404,6 +404,8 @@ A=\begin{pmatrix}
 def moltiplica_per_scalare(A: list[list[float]], alpha: float) -> list[list[float]]:
     return [[alpha * elemento for elemento in riga] for riga in A]</code></pre>
 
+<p><strong>Nota su <code>raise</code>:</strong> la parola chiave <code>raise</code> interrompe l'esecuzione della funzione e genera un'eccezione (errore). In questo esempio, se le due matrici non hanno la stessa dimensione, viene generato un errore di tipo <code>ValueError</code> con il messaggio indicato. È un modo per segnalare che l'operazione richiesta non è valida.</p>    
+
 <div class="exercise box">
 <p><strong>Esercizio guidato:</strong> calcola \(A+B\), \(3A\) e \(\frac12 B\), con</p>
 \[
