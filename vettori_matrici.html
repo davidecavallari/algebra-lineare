@@ -871,70 +871,196 @@ Ax=b
 </ul>
 <hr>
 
-<h2>14. Esercizi</h2>
-<div class="exercise box">
-<p><strong>Esercizio 1.</strong> Data la matrice</p>
-\[
-A=\begin{pmatrix}
-1 & 2 & 3 \\
--2 & -1 & 0
-\end{pmatrix}
-\]
-<p>indica \(a_{11}\), \(a_{13}\), \(a_{21}\), \(a_{22}\) e la dimensione della matrice.</p>
-</div>
+<h2>14. Esercizi di consolidamento</h2>
+<p>Gli esercizi seguenti servono a consolidare definizioni, notazione, matrici speciali, trasposta, somma, prodotto per scalare, prodotto matrice-vettore e prodotto matrice-matrice.</p>
 
-<div class="exercise box">
-<p><strong>Esercizio 2.</strong> Calcola \(A+B\), \(Ax\), \(Bx\), \(3A\) e \(\frac12B\), con</p>
+<div class="exercise box"><p><strong>Esercizio 1.</strong> Data</p>
 \[
-A=\begin{pmatrix}3&0\\1&1\end{pmatrix}, \quad
-B=\begin{pmatrix}-2&1\\0&2\end{pmatrix}, \quad
-x=\begin{pmatrix}1\\4\end{pmatrix}
+A=\begin{pmatrix}1&2&3\\4&5&6\end{pmatrix}
 \]
-</div>
+<p>indica numero di righe, numero di colonne, tipo della matrice e se è quadrata oppure no.</p></div>
 
-<div class="exercise box">
-<p><strong>Esercizio 3.</strong> Calcola, se possibile, il prodotto:</p>
+<div class="exercise box"><p><strong>Esercizio 2.</strong> Data</p>
 \[
-\begin{pmatrix}
-1 & 1 & -1 & 3 \\
-2 & -2 & 0 & 1
-\end{pmatrix}
-\begin{pmatrix}
-0\\1\\1\\-1
-\end{pmatrix}
+B=\begin{pmatrix}7&4&2\\1&0&-3\\5&8&6\end{pmatrix}
 \]
-<p>Prima stabilisci la dimensione del risultato.</p>
-</div>
+<p>scrivi il valore di \(b_{11}\), \(b_{23}\), \(b_{31}\), \(b_{32}\).</p></div>
 
-<div class="exercise box">
-<p><strong>Esercizio 4.</strong> Date le matrici</p>
+<div class="exercise box"><p><strong>Esercizio 3.</strong> Data</p>
 \[
-A=\begin{pmatrix}-5&2&3\\2&-3&4\end{pmatrix}, \quad
-B=\begin{pmatrix}2&-1&1&0\\0&2&2&2\\3&0&-1&3\end{pmatrix}
+C=\begin{pmatrix}4&1&2\\3&7&0\\5&6&9\end{pmatrix}
 \]
-<p>stabilisci se \(AB\) e \(BA\) sono definiti. Se sono definiti, indica la dimensione del risultato.</p>
-</div>
+<p>individua gli elementi della diagonale principale.</p></div>
 
-<div class="exercise box">
-<p><strong>Esercizio 5.</strong> Verifica che</p>
+<div class="exercise box"><p><strong>Esercizio 4.</strong> Stabilisci se le seguenti matrici sono uguali tra loro:</p>
 \[
-A=\begin{pmatrix}
-1&0&1\\
-2&3&4\\
-0&0&1
-\end{pmatrix}
+A=\begin{pmatrix}1&2\\3&4\end{pmatrix},\quad
+B=\begin{pmatrix}1&2\\3&4\end{pmatrix},\quad
+C=\begin{pmatrix}1&2\\4&3\end{pmatrix}
 \]
-<p>ha come inversa</p>
-\[
-A^{-1}=\begin{pmatrix}
-1&0&-1\\
--\frac23&\frac13&-\frac23\\
-0&0&1
-\end{pmatrix}
-\]</p>
-<p>calcolando almeno il prodotto \(AA^{-1}\).</p>
-</div>
+<p>Motiva la risposta facendo riferimento sia alle dimensioni sia agli elementi corrispondenti.</p></div>
 
+<div class="exercise box"><p><strong>Esercizio 5.</strong> Classifica i seguenti oggetti come vettore riga, vettore colonna o matrice \(1\times1\):</p>
+\[
+x=(1,2,3,4),\quad
+y=\begin{pmatrix}1\\2\\3\end{pmatrix},\quad
+z=(5)
+\]</div>
+
+<div class="exercise box"><p><strong>Esercizio 6.</strong> Per ciascuna matrice indica se è triangolare superiore, triangolare inferiore, diagonale oppure identità:</p>
+\[
+A=\begin{pmatrix}1&2&3\\0&4&5\\0&0&6\end{pmatrix},\quad
+B=\begin{pmatrix}7&0&0\\2&5&0\\1&3&4\end{pmatrix},\quad
+C=\begin{pmatrix}3&0&0\\0&2&0\\0&0&1\end{pmatrix}
+\]</div>
+
+<div class="exercise box"><p><strong>Esercizio 7.</strong> Calcola \(A^T\), sapendo che</p>
+\[
+A=\begin{pmatrix}1&2&3\\4&5&6\end{pmatrix}
+\]</div>
+
+<div class="exercise box"><p><strong>Esercizio 8.</strong> Calcola la trasposta del vettore</p>
+\[
+x=\begin{pmatrix}2\\-1\\5\end{pmatrix}
+\]</div>
+
+<div class="exercise box"><p><strong>Esercizio 9.</strong> Verifica se la matrice</p>
+\[
+A=\begin{pmatrix}1&4&2\\4&3&0\\2&0&5\end{pmatrix}
+\]
+<p>è simmetrica.</p></div>
+
+<div class="exercise box"><p><strong>Esercizio 10.</strong> Calcola \(A+B\), con</p>
+\[
+A=\begin{pmatrix}1&2\\3&4\end{pmatrix},\quad
+B=\begin{pmatrix}5&6\\7&8\end{pmatrix}
+\]</div>
+
+<div class="exercise box"><p><strong>Esercizio 11.</strong> Spiega perché non è possibile calcolare \(A+B\), se</p>
+\[
+A=\begin{pmatrix}1&2&3\\4&5&6\end{pmatrix},\quad
+B=\begin{pmatrix}1&2\\3&4\end{pmatrix}
+\]</div>
+
+<div class="exercise box"><p><strong>Esercizio 12.</strong> Calcola \(3A\), con</p>
+\[
+A=\begin{pmatrix}2&-1\\4&3\end{pmatrix}
+\]</div>
+
+<div class="exercise box"><p><strong>Esercizio 13.</strong> Calcola \(\frac12B\), con</p>
+\[
+B=\begin{pmatrix}6&8\\2&10\end{pmatrix}
+\]</div>
+
+<div class="exercise box"><p><strong>Esercizio 14.</strong> Calcola il prodotto matrice-vettore:</p>
+\[
+\begin{pmatrix}1&2\\3&4\end{pmatrix}
+\begin{pmatrix}5\\6\end{pmatrix}
+\]</div>
+
+<div class="exercise box"><p><strong>Esercizio 15.</strong> Calcola il prodotto matrice-vettore:</p>
+\[
+\begin{pmatrix}2&0&1\\1&-1&3\end{pmatrix}
+\begin{pmatrix}1\\2\\0\end{pmatrix}
+\]</div>
+
+<div class="exercise box"><p><strong>Esercizio 16.</strong> Per ciascun caso stabilisci se il prodotto è definito e, se sì, indica la dimensione del risultato:</p>
+<ol type="a">
+<li>\((2\times3)(3\times4)\)</li>
+<li>\((3\times2)(3\times4)\)</li>
+<li>\((4\times1)(1\times5)\)</li>
+<li>\((2\times4)(3\times2)\)</li>
+</ol></div>
+
+<div class="exercise box"><p><strong>Esercizio 17.</strong> Calcola \(AB\), con</p>
+\[
+A=\begin{pmatrix}1&2\\3&4\end{pmatrix},\quad
+B=\begin{pmatrix}5&6\\7&8\end{pmatrix}
+\]</div>
+
+<div class="exercise box"><p><strong>Esercizio 18.</strong> Calcola sia \(AB\) sia \(BA\), con</p>
+\[
+A=\begin{pmatrix}1&2\\0&1\end{pmatrix},\quad
+B=\begin{pmatrix}2&0\\3&1\end{pmatrix}
+\]
+<p>Confronta i risultati e commenta.</p></div>
+
+<div class="exercise box"><p><strong>Esercizio 19.</strong> Calcola \(AI\), con</p>
+\[
+A=\begin{pmatrix}2&1\\5&3\end{pmatrix},\quad
+I=\begin{pmatrix}1&0\\0&1\end{pmatrix}
+\]
+<p>Che cosa osservi?</p></div>
+
+<div class="exercise box"><p><strong>Esercizio 20.</strong> Date</p>
+\[
+A=\begin{pmatrix}1&2\\3&4\end{pmatrix},\quad
+B=\begin{pmatrix}0&1\\2&3\end{pmatrix},\quad
+x=\begin{pmatrix}1\\2\end{pmatrix}
+\]
+<p>calcola \(A+B\), \(2A\), \(Ax\), \(Bx\), \(AB\), \(BA\).</p></div>
+
+<h2>15. Esercizi di coding in Python</h2>
+<p>In questi esercizi le matrici devono essere rappresentate come liste di liste. Non usare librerie esterne: l'obiettivo è capire la logica degli indici e dei cicli.</p>
+
+<div class="exercise box"><p><strong>Coding 1.</strong> Scrivi una funzione <code>dimensioni(M)</code> che riceve una matrice e restituisce una coppia <code>(righe, colonne)</code>.</p>
+<pre><code>A = [
+    [1, 2, 3],
+    [4, 5, 6]
+]
+print(dimensioni(A))  # atteso: (2, 3)</code></pre></div>
+
+<div class="exercise box"><p><strong>Coding 2.</strong> Scrivi una funzione <code>elemento(M, i, j)</code> che restituisce l'elemento in riga matematica <code>i</code> e colonna matematica <code>j</code>. Ricorda: in matematica si parte da 1, in Python da 0.</p>
+<pre><code>A = [
+    [7, 4, 2],
+    [1, 0, -3],
+    [5, 8, 6]
+]
+print(elemento(A, 2, 3))  # atteso: -3</code></pre></div>
+
+<div class="exercise box"><p><strong>Coding 3.</strong> Scrivi una funzione <code>diagonale_principale(M)</code> che restituisce una lista con gli elementi della diagonale principale.</p>
+<pre><code>A = [
+    [4, 1, 2],
+    [3, 7, 0],
+    [5, 6, 9]
+]
+print(diagonale_principale(A))  # atteso: [4, 7, 9]</code></pre></div>
+
+<div class="exercise box"><p><strong>Coding 4.</strong> Scrivi una funzione <code>e_quadrata(M)</code> che restituisce <code>True</code> se la matrice è quadrata, altrimenti <code>False</code>.</p></div>
+
+<div class="exercise box"><p><strong>Coding 5.</strong> Scrivi una funzione <code>somma_matrici(A, B)</code> che restituisce la somma di due matrici della stessa dimensione. Se le dimensioni sono diverse, restituisci <code>None</code>.</p>
+<pre><code>A = [[1, 2], [3, 4]]
+B = [[5, 6], [7, 8]]
+print(somma_matrici(A, B))  # atteso: [[6, 8], [10, 12]]</code></pre></div>
+
+<div class="exercise box"><p><strong>Coding 6.</strong> Scrivi una funzione <code>prodotto_scalare_matrice(k, A)</code> che moltiplica tutti gli elementi della matrice per lo scalare <code>k</code>.</p>
+<pre><code>A = [[2, -1], [4, 3]]
+print(prodotto_scalare_matrice(3, A))  # atteso: [[6, -3], [12, 9]]</code></pre></div>
+
+<div class="exercise box"><p><strong>Coding 7.</strong> Scrivi una funzione <code>trasposta(A)</code> che restituisce la trasposta di una matrice.</p>
+<pre><code>A = [[1, 2, 3], [4, 5, 6]]
+print(trasposta(A))  # atteso: [[1, 4], [2, 5], [3, 6]]</code></pre></div>
+
+<div class="exercise box"><p><strong>Coding 8.</strong> Scrivi una funzione <code>prodotto_matrice_vettore(A, x)</code> che calcola il prodotto tra una matrice e un vettore colonna rappresentato come lista.</p>
+<pre><code>A = [[1, 2], [3, 4]]
+x = [5, 6]
+print(prodotto_matrice_vettore(A, x))  # atteso: [17, 39]</code></pre></div>
+
+<div class="exercise box"><p><strong>Coding 9.</strong> Scrivi una funzione <code>prodotto_matrici(A, B)</code> che calcola il prodotto righe per colonne. Se il prodotto non è definito, restituisci <code>None</code>.</p>
+<pre><code>A = [[1, 2], [3, 4]]
+B = [[5, 6], [7, 8]]
+print(prodotto_matrici(A, B))  # atteso: [[19, 22], [43, 50]]</code></pre></div>
+
+<div class="exercise box"><p><strong>Coding 10.</strong> Scrivi una funzione <code>e_simmetrica(A)</code> che restituisce <code>True</code> se la matrice è simmetrica, altrimenti <code>False</code>. Prima controlla che sia quadrata.</p>
+<pre><code>A = [
+    [1, 4, 2],
+    [4, 3, 0],
+    [2, 0, 5]
+]
+print(e_simmetrica(A))  # atteso: True</code></pre></div>
+
+<hr>
+    
 <h2>15. Riepilogo operativo</h2>
 <ul>
 <li>Una matrice è una tabella di numeri di tipo \(m \times n\).</li>
